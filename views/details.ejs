@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOMEPAGE</title>
+</head>
+
+<body>
+
+    
+    <form action="/update/<%=data.id%>?_method=PUT" method="POST">
+        <input type="text" name="house" value="<%=data2.house%>">
+        <input type="text" name="name" value="<%=data2.name%>">
+        <input type="text" name="eyecolor" value="<%=data2.eyecolor%>">
+
+        <input type="submit" value="UPDATE">
+
+    </form>
+
+    <form action="/delete/<%=data.id%>?_method=DELETE" method="POST">
+
+        <input type="submit" value="delete">
+
+    </form>
+
+
+</body>
+
+</html>

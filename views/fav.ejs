@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOMEPAGE</title>
+</head>
+<body>
+    <%FAVO.forEach(data=>{ %>
+        <!-- <h2><%=data.house%></h2>
+        <h4><%=data.name%></h4>
+        <p><%=data.eyecolor%></p> -->
+
+        <form action="/details/:id" method="POST">
+            <input type="hidden" name="house" value="<%=data2.house%>">
+            <input type="hidden" name="name" value="<%=data2.name%>">
+            <input type="hidden" name="eyecolor" value="<%=data2.eyecolor%>">
+            
+            <input type="submit" value="Add fav Char">
+        </form>
+
+
+    <% });%>
+</body>
+</html>
